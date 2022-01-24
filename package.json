@@ -1,0 +1,25 @@
+{
+  "name": "geolocation-server",
+  "version": "1.0.0",
+  "description": "API rest about geolocation",
+  "main": "server/app.js",
+  "scripts": {
+    "start": "node server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedrodls/geolocation-server.git"
+  },
+  "author": "Pedro João",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedrodls/geolocation-server/issues"
+  },
+  "homepage": "https://github.com/pedrodls/geolocation-server#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "mysql2": "^2.3.3"
+  }
+}
