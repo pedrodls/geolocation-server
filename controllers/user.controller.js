@@ -3,7 +3,7 @@ const {
 } = require('../models/models')
 
 exports.all = async (req, res) => {
-    await User.findAll().then(u => res.json(u));
+    await User.findAll({ order: [["createdAt", "DESC"]] }).then(u => res.json(u));
 }
 
 exports.one = async (req, res) => {

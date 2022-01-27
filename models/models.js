@@ -27,14 +27,10 @@ db.Op = Sequelize.Op;
 
 db.User = require('./user.model')(db)
 
-/*Object.keys(db).forEach((modelName) => {
-    if(db[modelName].associate)
-        db[modelName].associate(db)
-})
-*/
+
 
 if(process.env.ENV == "DEV"){ 
-    sequelize.sync({force: true, alter: true});
+    sequelize.sync({force: false, alter: false});
 }
 
 module.exports = db;
